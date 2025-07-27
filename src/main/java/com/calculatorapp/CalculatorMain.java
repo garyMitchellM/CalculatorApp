@@ -1,3 +1,9 @@
+package com.calculatorapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class CalculatorMain {
         static Calculator calc = new Calculator();
 
@@ -31,7 +37,10 @@ public class CalculatorMain {
         }
     }
 
+
     public static void main(String[] args){
+
+        SpringApplication.run(CalculatorMain.class, args);
 
         addNums();
         subtractNums();
