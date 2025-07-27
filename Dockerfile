@@ -5,7 +5,7 @@ FROM openjdk:17
 WORKDIR /app
 
 # Copy all project files into the container
-COPY target/* .
+COPY target/*.jar app.jar
 
 # Run the app
 ENTRYPOINT ["java", "-jar", "app.jar"]
